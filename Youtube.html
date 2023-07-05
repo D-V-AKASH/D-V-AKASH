@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="1384060.png">
+    <style>
+        body
+        {
+            padding-top: 78px;
+            padding-left: 85px;
+            padding-right: 15px;
+            background-color: rgb(248, 248, 248);
+        }
+        .full-page
+        {
+            display: grid;
+            column-gap: 15px;
+            row-gap: 25px;
+        }
+        @media(min-width:1000px)
+        {
+          .full-page
+          {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+        }
+        @media(min-width:751px) and (max-width:999px)
+        {
+          .full-page
+          {
+            grid-template-columns: 1fr 1fr 1fr ;
+          }
+        }
+        @media(max-width:750px)
+        {
+          .full-page
+          {
+            grid-template-columns: 1fr 1fr ;
+          }
+        }
+        .vid-tmb1
+        {
+            width: 100%;
+        }
+       .details1
+       {
+           display: grid;
+            grid-template-columns: 50px 1fr;
+       } 
+       .chnl-logo1
+       {
+            margin-top: 9px;
+            width: 36px;
+            border-radius: 100px;
+       }
+       .tmb1,.tmb2,.tmb3,.tmb4,.tmb5,.tmb6
+       {
+        position: relative ;
+       }
+        .vid-title1
+        { 
+            font-size: 14px;
+            text-transform: capitalize;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+        }
+        .chnl-name1
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px;
+        }
+        .views1
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        
+        .vid-tmb2
+        {
+           width: 100%;
+        }
+        .details2
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo2
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title2
+        {
+            font-size: 14px;
+            text-transform: capitalize;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+           
+        }
+        .chnl-name2
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views2
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+       
+        .vid-tmb3
+        { 
+           width: 100%;
+        }
+        .details3
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo3
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title3
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name3
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views3
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+       
+        .vid-tmb4
+        { 
+           width: 100%;
+        }
+        .details4
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo4
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title4
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name4
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views4
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        
+        .vid-tmb5
+        { 
+           width: 100%;
+        }
+        .details5
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo5
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title5
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name5
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views5
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        .vid-tmb6
+        { 
+           width: 100%;
+        }
+        .details6
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo6
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title6
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name6
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views6
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        .vid-tmb7
+        { 
+           width: 100%;
+        }
+        .details7
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo7
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title7
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name7
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views7
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        .vid-tmb8
+        { 
+           width: 100%;
+        }
+        .details8
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo8
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title8
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name8
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views8
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        .vid-tmb9
+        { 
+           width: 100%;
+        }
+        .details9
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo9
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title9
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name9
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views9
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        } .vid-tmb10
+        { 
+           width: 100%;
+        }
+        .details10
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo10
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title10
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name10
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views10
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        .vid-tmb11
+        { 
+           width: 100%;
+        }
+        .details11
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo11
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title11
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name11
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views11
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        .vid-tmb12
+        { 
+           width: 100%;
+        }
+        .details12
+        {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .chnl-logo12
+        {
+            border-radius: 100px;
+            width: 36px;
+        }
+        .vid-title12
+        {
+            text-transform: capitalize;
+            font-size: 14px;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .chnl-name12
+        {
+            font-size: 12px;
+            text-transform: capitalize;
+           color: #606060;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-top: 15px;
+           margin-bottom: 5px; 
+        }
+        .views12
+        {
+            font-size: 12px;
+            margin-top: 5px;
+           color: #606060;
+           font-family:Arial, Helvetica, sans-serif
+        }
+        .header
+        {
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 55px;
+            position: fixed;
+            right: 0px;
+            left: 0px;
+            top: 0px;
+            background-color: white;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color:rgb(219, 219, 219) ;
+        }
+        .left
+        {
+            display: flex;
+            align-items: center;
+            width: 200px;
+
+        }
+        .middle
+        {
+            display: flex;
+            justify-content: center;
+           width: 600px;
+           margin-left: 60px;
+
+        }
+        .right
+        {
+           display: flex;
+           justify-content: space-between;
+           width: 180px;
+           flex-shrink: 0;
+           margin-right: 20px;
+           margin-left: 110px;
+        }
+        .menu
+        {
+            width: 25px;
+            padding-left: 25px;
+        }
+        .ytb-logo
+        { 
+            margin-left: 20px;
+            width: 90px;
+        }
+        .search
+        {
+            border: 1px solid rgb(192, 192, 192);
+            display: flex;
+            flex: 1;
+            margin-left: 40px;
+            height: 36px;
+            width: 0px;
+            box-shadow: inset solid  0px 1px 2px 
+        }
+        .search::placeholder
+        {
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .search-icon
+        {
+            background-color: rgb(250, 250, 250);
+            width: 23px;
+            height: 28px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid rgb(219, 219, 219);
+            margin-left: -1px;
+        }
+        .tooltip,
+        .voice-tooltip,
+        .create-tooltip,
+        .apps-tooltip,
+        .not-tooltip
+        {
+            background-color: rgba(30, 30, 30, 0.507);
+            position: absolute;
+            color: white;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            bottom: -30px;
+            border-radius: 2px;
+            transition: opacity 0.1s;
+            pointer-events: none;
+            white-space: nowrap;
+            opacity: 0;
+        }
+        .search-div,
+        .voice-search-div,
+        .upload-div,
+        .apps-div,
+        .not-div
+        {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-div:hover .tooltip,
+        .voice-search-div:hover  .voice-tooltip,
+        .upload-div:hover .create-tooltip,
+        .apps-div:hover .apps-tooltip,
+        .not-div:hover .not-tooltip
+        {
+            opacity: 1;
+        }
+        .voice-search
+        {
+            background-color: rgb(249, 249, 249);
+            width: 25px;
+            height:35px ;
+            margin-left: 10px;
+            border-radius:20px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        .upload
+        {
+            width: 25px;
+        }
+        .apps
+        {
+            width: 25px;
+        }
+        .notification
+        {
+            width: 25px;
+        }
+        .profile
+        {
+            object-fit: cover;
+            border-radius: 100px;
+            width: 35px;
+            height: 35px;
+        }
+        .runtime1,.runtime2,.runtime3,.runtime4,.runtime5,.runtime6,.runtime7,.runtime8,.runtime9,.runtime10,.runtime11,.runtime12
+        {
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            background-color: black;
+            font-size: 12px;
+            font-weight:600;
+            color: white;
+            bottom: 12px;
+            right: 5px;
+            position: absolute ;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 3px;
+        }
+        .not-div
+        {
+           position: relative;
+        }
+        .not-no
+        {
+            position: absolute;
+            background-color: rgb(200, 0, 0);
+            color: white;
+            font-family: Roboto, Arial, Helvetica, sans-serifs;
+            font-size: 10px;
+            top: -3px;
+            right: -5px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 13px;
+        }
+        .sidebar
+        {
+            z-index: 200;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            top: 50px;
+            width: 72px;
+            background-color: white;
+            padding-top: 5px;
+        }
+        .sidebar-icons
+        {
+            height: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidebar-icons img
+        {
+            width: 24px;
+        }
+        .sidebar-icons:hover
+        { 
+            background-color: rgb(235, 235, 235);
+            cursor: pointer;
+        }
+        .icons-name
+        {
+            font-family: Roboto,Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            padding-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <i class="fa fa-youtube"></i>
+    <header class="header">
+        <div class="left">
+            <img class="menu" src="hamburger-menu.svg" alt="menu">
+            <img  class="ytb-logo" src="youtube-logo.svg" alt="youtube">
+        </div>
+        <div class="middle">
+            <input class="search" type="text" placeholder="search">          
+            <div class="search-div">
+                <img class="search-icon" src="search.svg" alt="search">
+                <div class="tooltip">search</div>
+            </div>
+            <div class="voice-search-div">
+                <img class="voice-search" src="voice-search-icon.svg" alt="voice-search">
+                <div class="voice-tooltip">search with your voice</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="upload-div">
+                <img class="upload " src="upload.svg" alt="upload">
+                <div class="create-tooltip">Create</div>
+            </div>
+            <div class="apps-div">
+                <img class="apps" src="youtube-apps.svg" alt="apps">
+                <div class="apps-tooltip">YouTube apps</div>
+            </div>
+            <div class="not-div">
+                <img class="notification" src="notifications.svg" alt="notification">
+                <div class="not-tooltip">Notification</div>
+                <div class="not-no">
+                    3
+                </div>
+            </div>
+            <img class="profile" src="thumbnail-8.webp" alt="profile">
+        </div>
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-icons">
+            <img  src="home.svg" alt="home">
+            <div class="icons-name">
+                Home
+            </div>
+        </div>
+        <div class="sidebar-icons">
+            <img src="explore.svg" alt="explore">
+            <div class="icons-name">            
+                Explore
+            </div>
+        </div>
+        <div class="sidebar-icons">
+            <img src="subscriptions.svg" alt="subscriptions">
+           <div class="icons-name">
+            Subscriptions
+           </div>
+        </div>
+        <div class="sidebar-icons">
+            <img src="originals.svg" alt="originals">
+            <div class="icons-name">
+                Originals
+            </div>
+        </div>
+        <div class="sidebar-icons">
+            <img src="youtube-music.svg" alt="music">
+            <div class="icons-name">
+                YouTubeMusic
+            </div>
+        </div>
+        <div class="sidebar-icons">
+            <img src="library.svg" alt="library">
+            <div class="icons-name">
+            Library
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="full-page">
+            <div class="vid1">
+               <div class="tmb1">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <img class="vid-tmb1" src="thumbnail-1.webp" alt="thumbnail">
+                </a>
+                  <div class="runtime1">
+                    14:20
+                 </div>
+               </div>
+               <div class="details1">
+                   <div class="logo1">
+                       <img class="chnl-logo1" src="channel-1.jpeg" alt="logo">
+                   </div>
+                   <div class="vid-details1">
+                        <p class="vid-title1">talking tech and  AI with google CEO sundar pichai </p>
+                        <p class="chnl-name1">marques brownlee</p>
+                        <p class="views1">3.6M views &#x2022; 6 months ago</p>
+                   </div>
+               </div>
+            </div>
+            <div class="vid2">
+                <div class="tmb2">
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                        <img class="vid-tmb2" src="thumbnail-2.webp" alt="thumbnail">
+                    </a>
+                    <div class="runtime2">
+                        8:22
+                    </div>
+                </div>
+                <div class="details2">
+                    <div class="logo2">
+                        <img class="chnl-logo2" src="channel-2.jpeg" alt="logo">
+                    </div>
+                    <div class="vid-details2">
+                        <p class="vid-title2">try not to laugh challenge #9</p>
+                        <p class="chnl-name2">markiplier</p>
+                        <p class="views2">19M views &#x2022; 4 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid3">
+                <div class="tmb3">
+                    <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                        <img class="vid-tmb3" src="thumbnail-3.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime3">
+                    9:13
+                   </div>
+                </div>
+                <div class="details3">
+                  <div class="logo3">
+                     <img class="chnl-logo3" src="channel-3.jpeg" alt="logo">
+                  </div>
+                  <div class="vid-details3">
+                     <p class="vid-title3">crazy tik tok taken moments brefore DISASTER</p>
+                     <p class="chnl-name3">SSSniperWolf</p>
+                     <p class="views3">12M views &#x2022; 1 year ago</p>
+                  </div>
+                </div>
+             </div>
+             <div class="vid4">
+                <div class="tmb4">
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                        <img class="vid-tmb4" src="thumbnail-4.webp" alt="thumbnail">
+                    </a>
+                    <div class="runtime4">
+                        22:09
+                    </div>
+                </div>
+                <div class="details4">
+                    <div class="logo4">
+                        <img class="chnl-logo4" src="channel-4.jpeg" alt="logo">
+                    </div>
+                    <div class="vid-details4">
+                       <p class="vid-title4">the simplest math problem no one can solve collatz</p>
+                       <p class="chnl-name4">veritasium</p>
+                       <p class="views4">18M views &#x2022; 4 months ago </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid5">
+                <div class="tmb5">
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                        <img class="vid-tmb5" src="thumbnail-5.webp" alt="thumbnail">
+                    </a>
+                    <div class="runtime5">
+                       11:17
+                    </div>
+                </div>
+                <div class="details5">
+                  <div class="logo5">
+                        <img  class="chnl-logo5" src="channel-5.jpeg" alt="logo">
+                  </div>
+                  <div class="vid-details5">
+                     <p class="vid-title1">kadane's algorithm to maximum sum subarray problem</p>
+                     <p class="chnl-name5">CS dojo</p>
+                     <p class="views5">519k views &#x2022; 5 years ago </p>
+                  </div>
+                </div>
+            </div>
+            <div class="vid6">
+                <div class="tmb6">
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                        <img  class="vid-tmb6" src="thumbnail-6.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime6">
+                    19:59
+                   </div>
+                </div>
+                <div class="details6">
+                    <div class="logo6">
+                        <img class="chnl-logo6" src="channel-6.jpeg" alt="logo6">
+                    </div>
+                    <div class="vid-details6">
+                        <p class="vid-title6">anything you fit in the circle i'll pay for</p>
+                        <p class="chnl-name6">MrBeast</p>
+                        <p class="views6">141M views &#x2022; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid7">
+                <div class="tmb7">
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                        <img  class="vid-tmb7" src="thumbnail-7.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime6">
+                    10:13
+                   </div>
+                </div>
+                <div class="details7">
+                    <div class="logo7">
+                        <img class="chnl-logo7" src="channel-7.jpeg" alt="logo">
+                    </div>
+                    <div class="vid-details7">
+                        <p class="vid-title7">why planes don't fly over tibet</p>
+                        <p class="chnl-name7">RealLifeLore</p>
+                        <p class="views7">6.6M views &#x2022; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid8">
+                <div class="tmb8">
+                    <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+                        <img  class="vid-tmb8" src="thumbnail-8.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime8">
+                    7:12
+                   </div>
+                </div>
+                <div class="details8">
+                    <div class="logo8">
+                        <img class="chnl-logo8" src="channel-8.jpeg" alt="logo8">
+                    </div>
+                    <div class="vid-details8">
+                        <p class="vid-title8">inside the world's biggest passenger plane</p>
+                        <p class="chnl-name8">Tech Vision</p>
+                        <p class="views8">3.7M views &#x2022; 10 months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid9">
+                <div class="tmb9">
+                    <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
+                   <img  class="vid-tmb9" src="thumbnail-9.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime9">
+                    13:17
+                   </div>
+                </div>
+                <div class="details9">
+                    <div class="logo9">
+                        <img class="chnl-logo9" src="channel-9.jpeg" alt="logo9">
+                    </div>
+                    <div class="vid-details9">
+                        <p class="vid-title9">the SECRET to super human STRENGTH </p>
+                        <p class="chnl-name9">ThenX</p>
+                        <p class="views9">20M views &#x2022; 3 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid10">
+                <div class="tmb10">
+                    <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+                        <img  class="vid-tmb10" src="thumbnail-10.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime10">
+                    7:53
+                   </div>
+                </div>
+                <div class="details10">
+                    <div class="logo10">
+                        <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                            <img class="chnl-logo10" src="channel-10.jpeg" alt="logo10">
+                        </a>
+                    </div>
+                    <div class="vid-details10">
+                        <p class="vid-title10">how the world's largest cruise ship makes 30,000 meals day</p>
+                        <p class="chnl-name10">Buisness Insider</p>
+                        <p class="views10">14M views &#x2022; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid11">
+                <div class="tmb11">
+                    <a href="https://www.youtube.com/watch?v=0nZuYyXET3s">
+                        <img  class="vid-tmb11" src="thumbnail-11.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime11">
+                    4:10
+                   </div>
+                </div>
+                <div class="details11">
+                    <div class="logo11">
+                        <img class="chnl-logo11" src="channel-11.jpeg" alt="logo11">
+                    </div>
+                    <div class="vid-details11">
+                        <p class="vid-title11">dubai's crazy underwater train and other things #only in dubai</p>
+                        <p class="chnl-name11">Destiantion tips</p>
+                        <p class="views11">3M views &#x2022; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid12">
+                <div class="tmb12">
+                    <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
+                        <img  class="vid-tmb12" src="thumbnail-12.webp" alt="thumbnail">
+                    </a>
+                   <div class="runtime12">
+                    4:51
+                   </div>
+                </div>
+                <div class="details12">
+                    <div class="logo12">
+                        <img class="chnl-logo12" src="channel-12.jpeg" alt="logo12">
+                    </div>
+                    <div class="vid-details12">
+                        <p class="vid-title12">What would happen if you didn't drink water? - Mia Nacamulli</p>
+                        <p class="chnl-name12">TED-Ed</p>
+                        <p class="views12">12M views &#x2022; 5 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>   
+</body>
+</html>
